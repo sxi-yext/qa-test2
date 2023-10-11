@@ -1,0 +1,13 @@
+buildConfiguration:
+  buildCommand: npm run build
+  installDependenciesStep:
+    command: "npm install"
+dynamicRedirects:
+  -
+    from: /dynamic/*
+    to: /index.html
+    status: 303
+staticRedirects:
+  -
+    from: /static/redirect2
+    to: /index.html
